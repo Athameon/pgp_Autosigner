@@ -1,0 +1,36 @@
+<html><body><h1>GPG-Signierung</h1>
+<p>Herzlich Wilkommen auf der Seite zum automatischen Signieren von deinem public Key.</p>
+<p>Bitte gebe nachfolgend deine Daten ein.</p>
+<p>Anschlie&szligend werden deine Daten &uumlberpr&uumlft und dein Key wird auf einen Keyserver hochgeladen.</p>
+
+<form action="signieren.php" method="get">
+  <table border="0">
+    <tr>
+      <td>ID des public Keys*</td>
+      <td><input type="text" name="id" maxlength="10" /></td>
+      <td>z.B.: 0x6B7A6BBE**</td>
+    </tr>
+    <tr>
+      <td>Fingerabdruck (Fingerprint)*</td>
+      <td><input type="text" name="fingerprint" maxlength="50"/></td>
+      <td>z.B.: 715A 07FA 1DF1 DC11 E1F2 30A3 1F3F BCD0 6B7A 6BBE**</td>
+    </tr>
+  </table>
+  <input type="checkbox" name="checkbox" value="1">* Ich best&aumltige hiermit, dass es sich um meine ID handelt und, dass die Daten richtig und komplett sind.<br>
+  <table>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="unterschreiben" /></td>
+      <td> &nbsp &nbsp &nbsp &nbsp*wird ben&oumltigt; **Das ist meine eigene ID, die k&oumlnnt ihr auch gerne unterschreiben</td>
+    </tr>
+  </table>
+</form>
+
+<p>Hinweis:</p>
+<p>&nbsp    - Dein Name (Ein Vorname + Nachname) vom pgp-Schl&uumlssel muss mit deinem Hochschulaccountname &uumlbereinstimmen.</p>
+<p>&nbsp    - Dein Schl&uumlssel muss bereits seit einigen Stunden auf einem Keyserver ver&oumlffentlicht sein.</p>
+<p>&nbsp    - Das Signieren ist mit deinem Anmeldenamen nur einmal moeglich.</p>
+<p>&nbsp    - Aus Sicherheitsgruenden wird die IP-Adresse, der Loginname, die ID, der Fingerabdruck, die Zeit sowie Browserbasierende Metadaten gespeichert.</p>
+
+<a href="impressum.html">Impressum</a>
+</body></html>
